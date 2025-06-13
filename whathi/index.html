@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 背景元素 -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- 主容器 -->
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        
+        <!-- 主页部分 -->
+        <section id="home" class="section home-section">
+            <div class="home-content">
+                <h1>你好，我是<span class="highlight">你的名字</span></h1>
+                <p class="subtitle">前端开发者 / 设计师 / 创意人士</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <button class="cta-button">查看我的作品</button>
+            </div>
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+        
+        <!-- 关于部分 -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/images/profile.jpg" alt="个人照片">
+                </div>
+                <div class="about-text">
+                    <p>我是一个充满激情的开发者，专注于创建美观且功能强大的网站和应用。</p>
+                    <p>拥有5年以上的开发经验，擅长HTML5, CSS3, JavaScript等前端技术。</p>
+                    <div class="skills">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI设计</span>
+                        <span class="skill-tag">响应式设计</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 项目展示 -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">我的项目</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project1.jpg" alt="项目1">
+                    </div>
+                    <h3>项目名称1</h3>
+                    <p>项目简短描述，这里可以写一些关于这个项目的内容。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project2.jpg" alt="项目2">
+                    </div>
+                    <h3>项目名称2</h3>
+                    <p>项目简短描述，这里可以写一些关于这个项目的内容。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/project3.jpg" alt="项目3">
+                    </div>
+                    <h3>项目名称3</h3>
+                    <p>项目简短描述，这里可以写一些关于这个项目的内容。</p>
+                    <a href="#" class="project-link">查看详情</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 联系部分 -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">联系我</h2>
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="你的名字" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="你的邮箱" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="你的消息" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">发送消息</button>
+            </form>
+        </section>
+        
+        <!-- 页脚 -->
+        <footer class="footer">
+            <p>© 2023 我的个人主页. 保留所有权利.</p>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
